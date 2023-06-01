@@ -9,15 +9,11 @@ body {
     height: 100vh;
 }
 
-header {
-    padding-bottom: 2rem;
+ header { /* padded header and main */
+    padding-bottom: 1rem;
     background-color: #000000;
     display: flex;
     justify-content: flex-end;
-}
-
-main {
-    background-color: #000000
 }
 
 button {
@@ -31,4 +27,29 @@ button {
     color: #FFFFFF;
     background-color: #4A4A4A;
 }
+
+main {  /* no wrapper in main */
+    padding: 1.5rem 4.5rem;
+    display: flex;
+    background-color: #000000
+}
+
+.viewer {
+    position: relative;
+}
+
+.viewer-pic {  /* or else the usual tiny line ... */
+    display: block;
+}
+
+.viewer-info {
+    padding: 0.3rem;
+    color: #FFFFFF;
+    background-color: rgba(108, 122, 137, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
 
