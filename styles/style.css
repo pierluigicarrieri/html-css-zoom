@@ -30,7 +30,7 @@ button {
 }
 
 main {  /* no wrapper in main, prob a bad idea, whatever */
-    height: 83vh;
+    height: 84vh;
     padding: 1.5rem 4.5rem;
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +55,11 @@ main {  /* no wrapper in main, prob a bad idea, whatever */
     left: 0;
 }
 
-footer {
+/* Had to be "pixel perfect" with padding
+in footer in order to account for the main
+section vh effect */
+
+footer {  
     display: flex;
     justify-content: space-between;
     background-color: #222222;
@@ -71,7 +75,7 @@ footer i {
     font-size: 20px;
 }
 
-#arrow-wrapper {
+.arrow-wrapper {
     display: flex;
     align-items: center;
 }
@@ -81,19 +85,33 @@ div .arrow {
 }
 
 #left-footer-wrapper {
+    padding: 0.6rem;
     display: flex;
     flex-grow: 0;
 }
 
-#mute, #stop-video {
+#mute, #stop-video, #share-screen {
     text-align: center;
     display: flex;
 }
 
 #center-footer-wrapper {
+    padding: 0.6rem;
     flex-grow: 1;
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
 }
+
+#center-footer-wrapper a {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    text-align: center;
+}
+
+#share-screen-button {
+    color: #57C800;
+}
+
 
 #right-footer-button {
     padding: 1rem;
