@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -65,8 +66,40 @@ footer a {
     text-decoration: none;
 }
 
+footer i {
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+}
+
+#arrow-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+div .arrow {
+    font-size: 10px;
+}
+
 #left-footer-wrapper {
     display: flex;
+    flex-grow: 0;
+}
+
+#mute, #stop-video {
+    text-align: center;
+    display: flex;
+}
+
+#center-footer-wrapper {
+    flex-grow: 1;
+    background-color: aqua;
+}
+
+#right-footer-button {
+    padding: 1rem;
+    color: #ED0604;
+    flex-grow: 0;
+    background-color: #4A4A4A;
 }
 
 
