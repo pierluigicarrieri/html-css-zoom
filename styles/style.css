@@ -28,9 +28,12 @@ button {
     background-color: #4A4A4A;
 }
 
-main {  /* no wrapper in main */
+main {  /* no wrapper in main, prob a bad idea, whatever */
+    height: 83vh;
     padding: 1.5rem 4.5rem;
     display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
     background-color: #000000
 }
 
@@ -49,6 +52,21 @@ main {  /* no wrapper in main */
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#left-footer-wrapper {
+    display: flex;
 }
 
 
